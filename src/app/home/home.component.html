@@ -1,0 +1,18 @@
+<p>home works!</p>
+
+
+<table class="table table-stripped">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Action</th>
+    </tr>
+    <tr *ngFor="let dt of staffData">
+        <td>{{dt.id}}</td>
+        <td>{{dt.name}}</td>
+        <td>{{dt.age}}</td>
+        <td><button class="btn btn-info" (click)="showDetailsStaff(dt)">Show Details</button></td>
+    </tr>
+
+</table>

@@ -1,0 +1,43 @@
+<p>sampletext works!</p>
+<!-- <div *ngIf="checkFlag" >
+    This is true Div
+</div>
+
+<div *ngIf="!checkFlag" >
+    This is false Div
+</div> -->
+<h3>ng-template</h3>
+
+<div *ngIf="checkFlag else showngtemplate">
+    This is First sentence in ng-template
+
+</div>
+<ng-template #showngtemplate>
+    This is Second sentence in ng-template ,this is else block
+</ng-template>
+
+<h3>ng-container</h3>
+<!-- <div *ngIf=" subjectFlag">
+    <div *ngFor="let dt of subject">
+        {{dt}}
+    </div>
+</div> -->
+
+<ng-container *ngIf=" subjectFlag">
+    <div *ngFor="let dt of subject">
+        {{dt}}
+    </div>
+</ng-container>
+
+<table>
+    <tr>
+        <th>ID</th>
+       <th>Email</th>
+       <!-- <th> FName</th>
+       <th>LNane</th> -->
+    </tr>
+    <tr *ngFor="let at of data2">
+        <td>{{at.id}}</td>
+        <td>{{at.email}}</td>
+    </tr>
+</table>
