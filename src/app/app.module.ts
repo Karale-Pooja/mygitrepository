@@ -14,6 +14,7 @@ import { ChildComponent } from './datacommunication/parent/child/child.component
 import { FirstcompComponent } from './datacommunication/firstcomp/firstcomp.component';
 import { SecondcompComponent } from './datacommunication/secondcomp/secondcomp.component';
 import { SampletextComponent } from './sampletext/sampletext.component';
+import { GitcompComponent } from './gitcomp/gitcomp.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { SampletextComponent } from './sampletext/sampletext.component';
     FirstcompComponent,
     SecondcompComponent,
     SampletextComponent,
+    GitcompComponent,
     
   ],
   imports: [
